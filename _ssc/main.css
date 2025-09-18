@@ -1,0 +1,423 @@
+
+/** General page styling **/
+html {
+  background-color: #000;
+}
+
+#main {
+  margin: 0;
+  position: relative;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 30px 0 3px 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+/**
+ * Grid container
+ */
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 200px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: auto;
+  padding: 0px;
+  transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -webkit-transition: background .15s ease-in-out;
+
+  /*opacity:1.0;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+
+  /*border: 0px #111 solid;
+  transition: border .15s ease-in-out;
+  -moz-transition: border .15s ease-in-out;
+  -webkit-transition: border .15s ease-in-out;*/
+}
+
+#tiles li:hover{
+  /*border: 5px #111 solid;
+  transition: border .15s ease-in-out;
+  -moz-transition: border .15s ease-in-out;
+  -webkit-transition: border .15s ease-in-out;*/
+}
+
+#tiles li .journal {
+  cursor: pointer;
+}
+
+.page-eva {
+  background-color: #ff0714;
+}
+
+.page-eva2 {
+  background-color: #ff0714;
+}
+
+.page-yta {
+  background-color: #769de6;
+}
+
+.page-yta2 {
+  background-color: #949ee3;
+}
+
+.page-btb {
+  background-color: #efba0d;
+}
+
+.page-fuf {
+  background-color: #22ffce;
+}
+
+.page-apv {
+  background-color: #1896fe;
+}
+
+.page-nfx {
+  background-color: #a1221d;
+}
+
+.page-swt {
+  background-color: #e7b0cc;
+}
+
+.page-adb {
+  background-color: #b082e5;
+}
+
+.page-bos {
+  background-color: #ccdab3;
+}
+
+.page-tat {
+  background-color: #fc870a;
+}
+
+.page-sbo {
+  background-color: #eee8d4;
+}
+
+.page-kit {
+  background-color: #ffdfe1;
+}
+
+.page-gic {
+  background-color: #7fbfff;
+}
+
+.page-pic {
+  background-color: #fde8b1;
+}
+
+.page-sky {
+  background-color: #edd8f9;
+}
+
+.page-sky2 {
+  background-color: #c8a1dd;
+}
+
+.page-pea {
+  background-color: #bceda6;
+}
+
+.page-act {
+  background-color: #d9b79c;
+}
+
+.page-bbm {
+  background-color: #eaa094;
+}
+
+.page-msf {
+  background-color: #f55b5b;
+}
+
+.page-run {
+  background-color: #ffb26c;
+}
+
+.page-rab {
+  background-color: #b2a9a1;
+}
+
+.page-rab2 {
+  background-color: #66615d;
+}
+
+.page-see {
+  background-color: #90c0e3;
+}
+
+.page-lip {
+  background-color: #ffd866;
+}
+
+.page-lip2 {
+  background-color: #fec400;
+}
+
+.page-boa {
+  background-color: #8da6c8;
+}
+
+.page-mnk {
+  background-color: #ffe18b;
+}
+
+.page-mnk2 {
+  background-color: #9b8752;
+}
+
+.page-hwk {
+  background-color: #e3a8c6;
+}
+
+.page-ubi {
+  background-color: #bad7e9;
+}
+
+.page-kfc {
+  background-color: #a5d7a6;
+}
+
+.page-ngk {
+  background-color: #4cd8f8;
+}
+
+.page-ngk2 {
+  background-color: #205a66;
+}
+
+.page-sal {
+  background-color: #d5c99a;
+}
+
+.page-sal2 {
+  background-color: #8f8e7a;
+}
+
+.page-bdg {
+  background-color: #af6565;
+}
+
+.page-mos {
+  background-color: #c8cd59;
+}
+
+.page-sam {
+  background-color: #a5cce7;
+}
+
+.page-arc {
+  background-color: #333;
+}
+
+.page-inf {
+  background-color: #969696;
+  text-align: center;
+}
+
+.page-inf1 {
+  background-color: #e6e6e6;
+  /*text-align: center;*/
+}
+
+.page-inf2 {
+  /*background-image: url(../_gmi/inf-bg1.jpg);*/
+  background-color: #969696;
+  text-align: center;
+}
+
+.page-inf3 {
+  background-color: #969696;
+}
+
+.page-6ss {
+  background-color: #33d1c3;
+}
+
+.page-aos {
+  background-color: #fe20ff;
+}
+
+.page-inf4 {
+  background-color: #000;
+  color: #555;
+  font-size: 12px;
+}
+
+.page-active img {
+  opacity: 0.15;
+  filter:alpha(opacity=15); /* For IE8 and earlier */
+}
+
+.page-sz5 {
+  background-color: #222;
+}
+
+.page-yukki {
+  background-color: #efd4d4;
+}
+
+#tiles .no-bg {
+  background: #000;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+
+  /*filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+
+  filter: brightness(20%);
+  -webkit-filter: brightness(20%);
+  -moz-filter: brightness(20%);
+  -o-filter: brightness(20%);
+  -ms-filter: brightness(20%);*/
+}
+
+.top {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+.top:hover {
+
+  opacity: 0.8;
+  filter:alpha(opacity=80); /* For IE8 and earlier */
+
+}
+
+#tiles li img:hover {
+  background: #fff;
+  /*background-image: url(../_gmi/sz5-t2.png);*/
+
+  transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -webkit-transition: background .15s ease-in-out;
+
+
+  /*filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);*/
+  
+}
+
+/**
+ * Grid item text
+ */
+#tiles li h1 {
+  color: #000;
+  font-size: 24px;
+  margin: 20px 20px 0px 20px;
+  font-family: 'Lato', sans-serif;
+  /*line-height: 30px;
+  font: 32px/32px Arial,Helvetica,sans-serif;
+  letter-spacing: -3px;*/
+}
+
+#tiles li h2 {
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  position: absolute; 
+  bottom: 10px; 
+  left: 0; 
+  width: 100%; 
+}
+
+#tiles li h3 {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+#tiles li h3 a, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+#tiles li h3 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#tiles li .txtmid {
+  font-size: 16px;
+  color: #ccc;
+  text-align: center;
+  margin: 10px 0px 40px 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+#tiles li p {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 40px 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+#tiles li a {
+  text-decoration: none;
+  color: #999;
+  background-color: #fff;
+}
+
+#tiles li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #999;
+}
+
+/**
+ * Placerholder css
+ */
+.wookmark-placeholder {
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  z-index: -1;
+}

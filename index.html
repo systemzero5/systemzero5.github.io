@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>systemzero5</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="copyright" content="Copyright (C) Mark Lawrence Ong" />
+  <meta name="description" content="systemzero5: creative director \ animator \ illustrator \ designer \ drummer \ bassist \ afol" />
+  <meta name="author" content="systemzero5 \ Mark Lawrence Ong" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="_ssc/reset.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="_ssc/main.css">
+  <style>
+    #tiles li {
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+    }
+
+    #tiles li img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div id="main" role="main">
+
+      <ul id="tiles">
+        <li><a href="http://www.systemzero5.com"><img src="_gmi/sz5-logo-w.png" alt="systemzero5"></a></li>
+
+        <li><a href="index.html"><img src="_gmi/ui-wrk.png" alt="Work"></a></li>
+        <!--<li class="page-eva2"><a href="eva/"><img src="_gmi/eva-t1.png" alt="Everything VS Anything"></a></li>//-->
+        <li class="page-yta"><a href="yta/"><img src="_gmi/yta-t1.png" alt="YouTube 10th Anniversary"></a></li>
+        <li class="page-btb"><a href="btb/"><img src="_gmi/btb-t1.png" alt="Build the Block"></a></li>
+        <li class="page-fuf"><a href="fuf/"><img src="_gmi/fuf-t1.png" alt="Fire Up the Fun"></a></li>
+        <li class="page-apv"><a href="apv/"><img src="_gmi/apv-t1.png" alt="Prime Video"></a></li>
+        <li class="page-nfx"><a href="nfx/"><img src="_gmi/nfx-t1.png" alt="Netflix"></a></li>
+        <li class="page-swt"><a href="swt/"><img src="_gmi/swt-t1.png" alt="Sweet Talk"></a></li>
+        <li class="page-adb"><a href="adb/"><img src="_gmi/adb-t1.png" alt="Adobe"></a></li>
+        <li class="page-bos"><a href="bos/"><img src="_gmi/bos-t1.png" alt="Bosch"></a></li>
+        <li class="page-tat"><a href="tat/"><img src="_gmi/tat-t1.png" alt="Tourism Authority of Thailand"></a></li>
+        <li class="page-sbo"><a href="sbo/"><img src="_gmi/sbo-t1.png" alt="Singapore Bicentennial"></a></li>
+        <li class="page-kit"><a href="kit/"><img src="_gmi/kit-t1.png" alt="KitKat"></a></li>
+        <li class="page-gic"><a href="gic/"><img src="_gmi/gic-t1.png" alt="GIC"></a></li>
+        <li class="page-pic"><a href="pic/"><img src="_gmi/pic-t1.png" alt="Pictionary"></a></li>
+        <li class="page-pea"><a href="pea/"><img src="_gmi/pea-t1.png" alt="Peaman"></a></li>
+        <li class="page-run"><a href="run/"><img src="_gmi/run-t1.png" alt="Run Amok!"></a></li>
+        <li class="page-rab"><a href="rab/"><img src="_gmi/rab-t1.png" alt="Raving Rabbids"></a></li>
+        <li class="page-lip"><a href="lip/"><img src="_gmi/lip-t1.png" alt="Lipton"></a></li>
+        <li class="page-ubi"><a href="ubi/"><img src="_gmi/ubi-t1.png" alt="Ubiworld"></a></li>
+        <li class="page-kfc"><a href="kfc/"><img src="_gmi/kfc-t1.png" alt="KFC"></a></li>
+        <li class="page-ngk"><a href="ngk/"><img src="_gmi/ngk-t1.png" alt="National Geographic Kids"></a></li>
+        <li class="page-bdg"><a href="bdg/"><img src="_gmi/bdg-t1.png" alt="Bodogfight"></a></li>
+
+        <!--<li><a href="arc/"><img src="_gmi/ui-arc.png" alt="Archive"></a></li>//-->
+        <li><a href="inf/"><img src="_gmi/ui-inf.png" alt="Info"></a></li>
+
+        <li class="page-inf4">&copy; <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> systemzero5</li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <script src="_sj/jquery.min.js"></script>
+  <script src="_sj/jquery.imagesloaded.js"></script>
+  <script src="_sj/jquery.wookmark.js"></script>
+  <script type="text/javascript">
+    (function ($){
+      $('#tiles').imagesLoaded(function() {
+        var options = {
+          itemWidth: 200,
+          autoResize: true,
+          container: $('#tiles'),
+          offset: 5,
+          outerOffset: 20,
+          flexibleWidth: 300
+        };
+
+        var handler = $('#tiles li');
+
+        handler.wookmark(options);
+      });
+    })(jQuery);
+  </script>
+
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    _uacct = "UA-2339550-1";
+    urchinTracker();
+  </script>
+
+</body>
+</html>
